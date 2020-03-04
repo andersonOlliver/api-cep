@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  consultacep.api:
+    image: ${DOCKER_REGISTRY-}consultacepapi
+    build:
+      context: .
+      dockerfile: src/ConsultaCep.Api/Dockerfile
